@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    float a, b, liq;
+
+    // Entrada dos valores
+    printf("Digite o valor do IVA (em %%): ");
+    scanf("%f", &a);
+
+    printf("Digite o valor do IRS (em %%): ");
+    scanf("%f", &b);
+
+    // Cálculo do líquido
+    liq = 100 - a - b;
+
+    // Saída formatada
+    printf("total = 100%%\n");
+    printf("IVA = %.0f%%\n", a);
+    printf("IRS = %.0f%%\n", b);
+    printf("--------------------\n");
+    printf("Liq. = %.0f%%\n", liq);
+
+    return 0;
+}
