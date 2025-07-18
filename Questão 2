@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    int num1, num2;
+    int soma, produto, diferenca, quociente, resto;
+
+    printf("Digite o primeiro número inteiro: ");
+    scanf("%d", &num1);
+
+    printf("Digite o segundo número inteiro: ");
+    scanf("%d", &num2);
+
+    soma = num1 + num2;
+    produto = num1 * num2;
+    diferenca = num1 - num2;
+
+    if (num2 != 0) {
+        quociente = num1 / num2;
+        resto = num1 % num2;
+
+        printf("\nResultados:\n");
+        printf("Soma = %d\n", soma);
+        printf("Produto = %d\n", produto);
+        printf("Diferença = %d\n", diferenca);
+        printf("Quociente = %d\n", quociente);
+        printf("Resto = %d\n", resto);
+    } else {
+        printf("\nErro: divisão por zero não é permitida.\n");
+    }
+
+    return 0;
+}
